@@ -22,6 +22,13 @@ screen.onkey(snake.down, 'Down')
 screen.onkey(snake.left, 'Left')
 screen.onkey(snake.right, 'Right')
 
+# Listen for controls
+screen.listen()
+screen.onkey(snake.up, 'Up')
+screen.onkey(snake.down, 'Down')
+screen.onkey(snake.left, 'Left')
+screen.onkey(snake.right, 'Right')
+
 # Move the snake
 is_game_on = False
 if len(snake.body) != 0:
